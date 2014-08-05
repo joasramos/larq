@@ -45,9 +45,10 @@
 | the active record class
 */
 
-$active_group = 'default';
+$active_group = 'mysql';
 $active_record = TRUE;
 
+//POSTGRES
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'postgres';
 $db['default']['password'] = 'asdf0123';
@@ -64,8 +65,24 @@ $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
 
-//SERVIDOR
+//MYSQL
+$db['mysql']['hostname'] = 'localhost';
+$db['mysql']['username'] = 'quint870_larq';
+$db['mysql']['password'] = 'asdf0123';
+$db['mysql']['database'] = 'quint870_cch';
+$db['mysql']['dbdriver'] = 'mysql';
+$db['mysql']['dbprefix'] = '';
+$db['mysql']['pconnect'] = TRUE;
+$db['mysql']['db_debug'] = TRUE;
+$db['mysql']['cache_on'] = FALSE;
+$db['mysql']['cachedir'] = '';
+$db['mysql']['char_set'] = 'utf8';
+$db['mysql']['dbcollat'] = 'utf8_general_ci';
+$db['mysql']['swap_pre'] = '';
+$db['mysql']['autoinit'] = TRUE;
+$db['mysql']['stricton'] = FALSE;
 
+//SERVIDOR
 $db['server']['hostname'] = 'http://bdsites.ufma.br';
 $db['server']['username'] = 'larq_site';
 $db['server']['password'] = '#lab@rqu30log1a';

@@ -23,6 +23,10 @@ class Inscricoes extends CI_Controller {
         $this->load->view("registro/index");
     }
 
+    public function cadastro() {
+        $this->load->view("registro/cad-parti");
+    }
+
     public function submit() {
         $p = $this->input->post();
         $this->load->model("participante");
@@ -30,8 +34,25 @@ class Inscricoes extends CI_Controller {
         redirect("inscricoes/success");
     }
 
+    /*
+     * Carrega página de sucesso após inserir um participante
+     */
+
     public function success() {
         $this->load->view("registro/success");
+    }
+
+    /**
+     * Exibe lista de participantes registrados no sistema
+     */
+    public function registrados() {
+        $this->load->css("assets/themes/registro/style-tbl-part.css");
+        $data = array();
+
+        $this->load->model("participante");
+        $data['list'] = $this->participante->findAll();
+
+        $this->load->view("registro/admin/list-parti", $data);
     }
 
 }

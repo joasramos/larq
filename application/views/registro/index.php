@@ -1,215 +1,113 @@
-<div id='wrap'>
-    <h1 title='how forms should be done.'>Formulário de Cadastro</h1>
-    <section class='form'>
-        <form action="<?=  base_url()?>inscricoes/submit" method="post" novalidate>
-            <fieldset>
-                <div class="item">
-                    <label>
-                        <span>Nome</span>
-                        <input  name="nome" placeholder="ex. Joás R. Araújo" required="required" pattern="phone"/>		
-                    </label>
-                    <div class='tooltip help'>
-                        <span>?</span>
-                        <div class='content'>
-                            <b></b>
-                            <p>Informe seu nome completo</p>
-                        </div>
-                    </div>
+<html>
+    <head>
+        <title>LARQ</title>
+        <base href="<?= base_url() ?>" target="_blank">
+        <link rel="stylesheet" href="<?= base_url() ?>assets/themes/larq/bubble-navigation/css/style.css" type="text/css" media="screen"/>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            body{
+                font-family:Arial;
+                background:#fff url(assets/themes/larq/bubble-navigation/images/bg.png) no-repeat top left;
+            }
+            .title{
+                width:548px;
+                height:119px;
+                position:absolute;
+                top:400px;
+                left:150px;
+                background:transparent url(title.png) no-repeat top left;
+            }
+            a.back{
+                background:transparent url(back.png) no-repeat top left;
+                position:fixed;
+                width:150px;
+                height:27px;
+                outline:none;
+                bottom:0px;
+                left:0px;
+            }
+            #content{
+                margin:0 auto;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <div id="content">
+            <a class="back" href="http://tympanus.net/codrops/2010/04/29/awesome-bubble-navigation-with-jquery"></a>
+            <div class="title">Laboratório de Arqueologia do Maranhão - UFMA</div>
+
+            <div class="navigation" id="nav">
+                <div class="item user">
+                    <img src="<?= base_url() ?>assets/themes/larq/bubble-navigation/images/bg_user.png" alt="" width="199" height="199" class="circle"/>
+                    <a href="<?= base_url() ?>inscricoes/registrados" class="icon"></a>
+                    <h2>Área restrita</h2>
+                    <!--                    <ul>
+                                            <li><a href="<?= base_url() ?>inscricoes/registrados">Participantes</a></li>
+                                        </ul>-->
                 </div>
-                <div class="item">
-                    <label>
-                        <span>Idade</span>
-                        <input name="idade" required="required" type="text" pattern='\d+' placeholder="23">
-                    </label>
-                    <div class='tooltip help'>
-                        <span>?</span>
-                        <div class='content'>
-                            <b></b>
-                            <p>Informe sua idade</p>
-                        </div>
-                    </div>
-                    <span class='extra'>(optional)</span>
+                <div class="item home">
+                    <img src="<?= base_url() ?>assets/themes/larq/bubble-navigation/images/bg_home.png" alt="" width="199" height="199" class="circle"/>
+                    <a href="<?= base_url() ?>" class="icon"></a>
+                    <h2>Evento</h2>
+                    <ul>
+                        <li><a href="#">&rightarrow;Apresentação</a></li>
+                        <li><a href="#">&rightarrow;Programação</a></li>
+                    </ul>
                 </div>
-                <div class="item">
-                    <label>
-                        <span>Email</span>
-                        <input required="required" type="text" name="email" pattern="email"/>
-                    </label>
-                    <div class='tooltip help'>
-                        <span>?</span>
-                        <div class='content'>
-                            <b></b>
-                            <p>Digite corretamente seu email</p>
-                        </div>
-                    </div>
+                <div class="item shop">
+                    <img src="<?= base_url() ?>assets/themes/larq/bubble-navigation/images/bg_shop.png" alt="" width="199" height="199" class="circle"/>
+                    <a href="<?= base_url() ?>inscricoes/cadastro" class="icon"></a>
+                    <h2>Inscrição</h2>
                 </div>
+                <div class="item camera">
+                    <img src="<?= base_url() ?>assets/themes/larq/bubble-navigation/images/bg_camera.png" alt="" width="199" height="199" class="circle"/>
+                    <a href="#" class="icon"></a>
+                    <h2>Informações</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The JavaScript -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="<?= base_url() ?>assets/themes/larq/bubble-navigation/jquery.easing.1.3.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('#nav > div').hover(
+                    function() {
+                        var $this = $(this);
+                        $this.find('img').stop().animate({
+                            'width': '199px',
+                            'height': '199px',
+                            'top': '-25px',
+                            'left': '-25px',
+                            'opacity': '1.0'
+                        }, 500, 'easeOutBack', function() {
+                            $(this).parent().find('ul').fadeIn(700);
+                        });
 
+                        $this.find('a:first,h2').addClass('active');
+                    },
+                    function() {
+                        var $this = $(this);
+                        $this.find('ul').fadeOut(500);
+                        $this.find('img').stop().animate({
+                            'width': '52px',
+                            'height': '52px',
+                            'top': '0px',
+                            'left': '0px',
+                            'opacity': '0.1'
+                        }, 5000, 'easeOutBack');
 
-
-                <!--                <div class="item">
-                                    <label>
-                                        <span>email</span>
-                                        <input name="email" class='email' required="required" type="email" />
-                                    </label>
-                                </div>
-                                <div class="item">
-                                    <label>
-                                        <span>Confirm email address</span>
-                                        <input type="email" class='email' name="confirm_email" data-validate-linked='email' required='required'>
-                                    </label>
-                                </div>
-                                <div class="item">
-                                    <label>
-                                        <span>Number</span>
-                                        <input type="number" class='number' name="number" data-validate-minmax="10,100" required='required'>
-                                    </label>
-                                    <div class='tooltip help'>
-                                        <span>?</span>
-                                        <div class='content'>
-                                            <b></b>
-                                            <p>Number must be between 10 and 100</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <label>
-                                        <span>Date</span>
-                                        <input class='date' type="date" name="date" required='required'>
-                                    </label>
-                                </div>
-                                <div class="item">
-                                    <label>
-                                        <span>Password</span>
-                                        <input type="password" name="password" data-validate-length="6,8" required='required'>
-                                    </label>
-                                    <div class='tooltip help'>
-                                        <span>?</span>
-                                        <div class='content'>
-                                            <b></b>
-                                            <p>Should be of length 6 OR 8 characters</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <label>
-                                        <span>Repeat password</span>
-                                        <input type="password" name="password2" data-validate-linked='password' required='required'>
-                                    </label>
-                                </div>
-                                <div class="item">
-                                    <label>
-                                        <span>Telephone</span>
-                                        <input type="tel" class='tel' name="phone" required='required' data-validate-length-range="8,20">
-                                    </label>
-                                    <div class='tooltip help'>
-                                        <span>?</span>
-                                        <div class='content'>
-                                            <b></b>
-                                            <p>Notice that for a phone number user can input a '+' sign, a dash '-' or a space ' '</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <label>
-                                        <span>Drop down selection</span>
-                                        <select class="required" name="dropdown">
-                                            <option value="">-- none --</option>
-                                            <option value="o1">Option 1</option>
-                                            <option value="o2">Option 2</option>
-                                            <option value="o3">Option 3</option>
-                                        </select>
-                                    </label>
-                                    <div class='tooltip help'>
-                                        <span>?</span>
-                                        <div class='content'>
-                                            <b></b>
-                                            <p>Choose something or choose not. what shall it be?</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <label>
-                                        <span>url</span>
-                                        <input name="url" placeholder="http://www.website.com" required="required" type="url" />
-                                    </label>
-                                </div>
-                
-                                <div class="item multi required">
-                                    <label for='multi_first'>
-                                        <span>Multifield</span>
-                                    </label>
-                                    <div class='input'>
-                                        <input type="text" name="multi1" maxlength='4' id='multi_first'>
-                                        <input type="text" name="multi2" maxlength='4'>
-                                        <input type="text" name="multi3" maxlength='4'>
-                                        <input type="text" name="multi4" maxlength='4'>
-                                        <input type="text" name="multi5" maxlength='4'>
-                                        <input type="text" name="multi6" maxlength='4'>
-                                        <input data-validate-length-range="24" data-validate-pattern="alphanumeric" id="serial" name="serial" type="hidden" required='required' />
-                                    </div>
-                                    <div class='tooltip help'>
-                                        <span>?</span>
-                                        <div class='content'>
-                                            <b></b>
-                                            <p>This is a multifield, which let the user input a serial number or credit card number for example, and the trick is to validate the combined result, which is stored in a hidden field</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <label>
-                                        <span>message</span>
-                                        <textarea required="required" name='message'></textarea>
-                                    </label>
-                                </div>
-                            </fieldset>
-                            <fieldset>
-                                <p>There is a hidden "Required" form field below, notice it will not be validated due to its lack of visibility. The reason for this is that sometimes there is a section in a form that is not visible until some action is taken, but you do not want to change all those fields' "required" attributes on-the-fly, so that is why.</p>
-                                <input name="somethingHidden" required="required" type="text" style='display:none' />
-                            </fieldset>-->
-
-                <button id='send' type='submit'>Confirmar cadastro</button>
-        </form>	
-    </section>
-</div>
-<script>
-    // initialize the validator function
-    validator.message['date'] = 'not a real date';
-
-    // validate a field on "blur" event, a 'select' on 'change' event & a '.reuired' classed multifield on 'keyup':
-    $('form')
-            .on('blur', 'input[required], input.optional, select.required', validator.checkField)
-            .on('change', 'select.required', validator.checkField)
-            .on('keypress', 'input[required][pattern]', validator.keypress);
-
-    $('.multi.required')
-            .on('keyup blur', 'input', function() {
-                validator.checkField.apply($(this).siblings().last()[0]);
-            });
-
-    // bind the validation to the form submit event
-    //$('#send').click('submit');//.prop('disabled', true);
-
-    $('form').submit(function(e) {
-        e.preventDefault();
-        var submit = true;
-        // evaluate the form using generic validaing
-        if (!validator.checkAll($(this))) {
-            submit = false;
-        }
-
-        if (submit)
-            this.submit();
-        return false;
-    });
-
-    /* FOR DEMO ONLY */
-    $('#vfields').change(function() {
-        $('form').toggleClass('mode2');
-    }).prop('checked', false);
-
-    $('#alerts').change(function() {
-        validator.defaults.alerts = (this.checked) ? false : true;
-        if (this.checked)
-            $('form .alert').remove();
-    }).prop('checked', false);
-</script>
+                        $this.find('a:first,h2').removeClass('active');
+                    }
+            );
+        });
+    </script>
+</body>
+</html>
