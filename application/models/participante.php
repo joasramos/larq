@@ -13,8 +13,6 @@
  */
 class Participante extends CI_Model {
 
-    //put your code here
-
     public function __construct() {
         parent::__construct();
     }
@@ -26,12 +24,32 @@ class Participante extends CI_Model {
             "idade" => $p['idade'],
             "email" => $p['email']
         );
-        
+
         $this->db->insert("participante", $data);
     }
-    
-    public function findAll(){
+
+    public function findAll() {
         return $this->db->get("participante")->result();
+    }
+
+    public function getFormacao() {
+        return $this->db->get("formacao")->result();
+    }
+
+    public function login($username, $password) {
+        $this->db->select('id, username, password');
+        $this->db->from('users');
+        $this->db->where('username', $username);
+        $this->db->where('password', MD5($password));
+        $this->db->limit(1);
+
+        $query = $this->db->get();
+
+        if ($query->num_rows() == 1) {
+            return $query->result();
+        } else {
+            return false;
+        }
     }
 
 }

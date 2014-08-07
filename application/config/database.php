@@ -67,9 +67,9 @@ $db['default']['stricton'] = FALSE;
 
 //MYSQL
 $db['mysql']['hostname'] = 'localhost';
-$db['mysql']['username'] = 'quint870_larq';
-$db['mysql']['password'] = 'asdf0123';
-$db['mysql']['database'] = 'quint870_cch';
+$db['mysql']['username'] = 'root';
+$db['mysql']['password'] = '';
+$db['mysql']['database'] = 'larq';
 $db['mysql']['dbdriver'] = 'mysql';
 $db['mysql']['dbprefix'] = '';
 $db['mysql']['pconnect'] = TRUE;

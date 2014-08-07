@@ -7,11 +7,12 @@ class Inscricoes extends CI_Controller {
 
     function __construct() {
         parent::__construct();
-        $this->load->helper('url');
         $this->_init();
     }
 
     private function _init() {
+        $this->load->helper('url');
+        $this->load->model("participante");
         $this->output->set_template('blank');
         $this->load->css("assets/themes/registro/fv.css");
         $this->load->js("assets/themes/default/js/jquery-1.9.1.min.js");
@@ -19,17 +20,27 @@ class Inscricoes extends CI_Controller {
         $this->load->js("assets/themes/registro/validator.js");
     }
 
+    /**
+     * Exibe homepage do evento
+     */
     public function index() {
         $this->load->view("registro/index");
     }
 
+    /*
+     * Exibe view com o formulário de cadastro de um participante
+     */
+
     public function cadastro() {
-        $this->load->view("registro/cad-parti");
+        $data['formacao'] = $this->participante->getFormacao();
+        $this->load->view("registro/cad-parti", $data);
     }
 
+    /**
+     * Método chamado no ato do cadastro de um participante
+     */
     public function submit() {
         $p = $this->input->post();
-        $this->load->model("participante");
         $this->participante->insert($p);
         redirect("inscricoes/success");
     }

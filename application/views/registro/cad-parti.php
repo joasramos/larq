@@ -42,7 +42,7 @@
                         <span>?</span>
                         <div class='content'>
                             <b></b>
-                            <p>Notice that for a phone number user can input a '+' sign, a dash '-' or a space ' '</p>
+                            <p> </p>
                         </div>
                     </div>
                 </div>
@@ -50,10 +50,12 @@
                     <label>
                         <span>Formação</span>
                         <select class="required" name="forma">
-                            <option value="">-- none --</option>
-                            <option value="o1">Option 1</option>
-                            <option value="o2">Option 2</option>
-                            <option value="o3">Option 3</option>
+                            <?php if ($formacao): foreach ($formacao as $f): ?>
+                                    <option value="<?= $f->idform ?>"> <?= $f->nome ?> </option>
+                                    <?php
+                                endforeach;
+                            endif;
+                            ?>
                         </select>
                     </label>
                     <div class='tooltip help'>
