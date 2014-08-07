@@ -57,19 +57,19 @@
                     <p>Laboratório de Arqueologia da Univerdade Federal do Maranhão</p>
                 </div>
                 <div class="fl_right">
-                    <p><a href="#">Login estudante</a> | <a href="#">Login administrativo</a></p>
+                    <p><a href="#">Administratação</a></p>
                     <form action="#" method="post" id="sitesearch">
                         <fieldset>
                             <legend>Site Search</legend>
                             <input type="text" value="Buscar no Site&hellip;" onfocus="this.value = (this.value == 'Search Our Website&hellip;') ? '' : this.value;" />
-                            <input type="image" src="images/search.gif" id="search" alt="Search" />
+                            <input type="image" src="<?= base_url() ?>assets/themes/larq/images/search.gif" id="search" alt="Search" />
                         </fieldset>
                     </form>
                 </div>
                 <div id="topnav">
                     <ul>
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="gallery.html">Galeria</a></li>
+                        <li class="active"><a href="<?= base_url() ?>site">Home</a></li>
+                        <li><a href="">Galeria</a></li>
                         <li><a href="">Biblioteca</a></li>
                         <li><a href="">Colaboradores</a></li>
                         <li><a href="">Ouvidoria</a></li>
@@ -135,13 +135,13 @@
                             <ul class="clear">
                                 <li>
                                     <h2>Noticia Importante</h2>
-                                    <img src="images/demo/300x120.gif" alt="" />
+                                    <img src="<?= base_url() ?>assets/themes/larq/images/demo/300x120.gif" alt="" />
                                     <p>Morbit incidunt maurisque eros molest nunc anteget sed vel lacus mus semper. Anter dumnullam interdum eros dui urna consequam ac nisl nullam ligula vestassa.</p>
                                     <p class="readmore"><a href="#">Continuar lendo &raquo;</a></p>
                                 </li>
                                 <li class="last">
                                     <h2>Outra noticia importante</h2>
-                                    <img src="images/demo/300x120.gif" alt="" />
+                                    <img src="<?= base_url() ?>assets/themes/larq/images/demo/300x120.gif" alt="" />
                                     <p>Morbit incidunt maurisque eros molest nunc anteget sed vel lacus mus semper. Anter dumnullam interdum eros dui urna consequam ac nisl nullam ligula vestassa.</p>
                                     <p class="readmore"><a href="#">Continue lendo &raquo;</a></p>
                                 </li>
@@ -152,18 +152,19 @@
                             <ul>
                                 <li>
                                     <p><strong>Sentumquisque morbi dui congue tincidunt eu quis</strong><br />
-                                        This is a W3C compliant free website template from <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a>. This template is distributed using a <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>&hellip;</p>
-                                    <p class="readmore"><a href="#">Read The Full Story &raquo;</a></p>
+                                        This is a W3C compliant free website template from
+                                        <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a>. This template is distributed using a <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>&hellip;</p>
+                                    <p class="readmore"><a href="#">Leia a noticia completa &raquo;</a></p>
                                 </li>
                                 <li>
                                     <p><strong>Sentumquisque morbi dui congue tincidunt eu quis</strong><br />
                                         You can use and modify the template for both personal and commercial use. You must keep all copyright information and credit links in the template and associated files. For more CSS templates visit <a href="http://www.os-templates.com/">Free Website Templates</a>&hellip;</p>
-                                    <p class="readmore"><a href="#">Read The Full Story &raquo;</a></p>
+                                    <p class="readmore"><a href="#">Leia a noticia completa &raquo;</a></p>
                                 </li>
                                 <li class="last">
                                     <p><strong>Sentumquisque morbi dui congue tincidunt eu quis</strong><br />
                                         Vestassapede et donec ut est liberos sus et eget sed eget. Quisqueta habitur augue magnisl magna phasellus sagittitor&hellip;</p>
-                                    <p class="readmore"><a href="#">Read The Full Story &raquo;</a></p>
+                                    <p class="readmore"><a href="#">Leia a noticia completa &raquo;</a></p>
                                 </li>
                             </ul>
                         </div>
@@ -171,13 +172,13 @@
                             <h2>Links Parceiros</h2>
                             <ul>
                                 <li>
-                                    <p><a href="#">Make an Application <img src="images/demo/200x80.gif" alt="" /></a></p>
+                                    <p><a href="#">UFMA <img src="<?= base_url() ?>assets/themes/larq/images/demo/200x80.gif" alt="" /></a></p>
                                 </li>
                                 <li>
-                                    <p><a href="#">Order a Prospectus <img src="images/demo/200x80.gif" alt="" /></a></p>
+                                    <p><a href="#">FAPEMA <img src="<?= base_url() ?>assets/themes/larq/images/demo/200x80.gif" alt="" /></a></p>
                                 </li>
                                 <li class="last">
-                                    <p><a href="#">Support Us <img src="images/demo/200x80.gif" alt="" /></a></p>
+                                    <p><a href="#">Outro parceiro <img src="<?= base_url() ?>assets/themes/larq/images/demo/200x80.gif" alt="" /></a></p>
                                 </li>
                             </ul>
                         </div>
@@ -202,21 +203,21 @@
                         <div class="holder last">
                             <h2>Colaboradores &amp; Parcerias</h2>
                             <ul class="staffmembers">
-                                <li class="clear"><img class="imgl" src="images/demo/80x80.gif" alt="" />
+                                <li class="clear"><img class="imgl" src="<?= base_url() ?>assets/themes/larq/images/demo/80x80.gif" alt="" />
                                     <div class="fl_left">
                                         <p><strong>Nome</strong></p>
                                         <p>Função: </p>
                                         <p><a href="#">Ver perfil completo &raquo;</a></p>
                                     </div>
                                 </li>
-                                <li class="clear"><img class="imgl" src="images/demo/80x80.gif" alt="" />
+                                <li class="clear"><img class="imgl" src="<?= base_url() ?>assets/themes/larq/images/demo/80x80.gif" alt="" />
                                     <div class="fl_left">
                                         <p><strong>Nome</strong></p>
                                         <p> Função: </p>
                                         <p><a href="#">Ver perfil completo &raquo;</a></p>
                                     </div>
                                 </li>
-                                <li class="clear"><img class="imgl" src="images/demo/80x80.gif" alt="" />
+                                <li class="clear"><img class="imgl" src="<?= base_url() ?>assets/themes/larq/images/demo/80x80.gif" alt="" />
                                     <div class="fl_left">
                                         <p><strong>Nome</strong></p>
                                         <p>Função: </p>
@@ -263,11 +264,11 @@
                     <div id="social">
                         <h2>Conecte-se com a gente</h2>
                         <ul>
-                            <li><a href="#"><img src="images/social/facebook.gif" alt="" /></a></li>
-                            <li><a href="#"><img src="images/social/twitter.gif" alt="" /></a></li>
-                            <li><a href="#"><img src="images/social/flickr.gif" alt="" /></a></li>
-                            <li><a href="#"><img src="images/social/youtube.gif" alt="" /></a></li>
-                            <li class="last"><a href="#"><img src="images/social/rss.gif" alt="" /></a></li>
+                            <li><a href="#"><img src="<?= base_url() ?>assets/themes/larq/images/social/facebook.gif" alt="" /></a></li>
+                            <li><a href="#"><img src="<?= base_url() ?>assets/themes/larq/images/social/twitter.gif" alt="" /></a></li>
+                            <!--<li><a href="#"><img src="images/social/flickr.gif" alt="" /></a></li>-->
+                            <li><a href="#"><img src="<?= base_url() ?>assets/themes/larq/images/social/youtube.gif" alt="" /></a></li>
+                            <!--<li class="last"><a href="#"><img src="images/social/rss.gif" alt="" /></a></li>-->
                         </ul>
                     </div>
                     <div id="newsletter" class="clear">
