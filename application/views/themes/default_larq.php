@@ -48,6 +48,23 @@
         <script type="text/javascript" src="<?= base_url() ?>assets/themes/larq/js/jquery.galleryview.setup.js"></script>
         <!-- End Homepage Specific Elements -->
 
+        <style type="text/css">
+            .Three-Dee{
+                font-family: Garamond, serif;
+                line-height: 1em;
+                color: #cc3f3f;
+                font-weight:bold;
+                font-size: 25px;
+                text-shadow:0px 0px 0 rgb(165,24,24),1px 0px 0 rgb(136,-5,-5),2px 0px 0 rgb(107,-34,-34), 3px 0px 0 rgb(78,-63,-63),4px 0px 3px rgba(0,0,0,0.6),4px 0px 1px rgba(0,0,0,0.5),0px 0px 3px rgba(0,0,0,.2);
+            }
+
+            .sombra-dir-baixo{
+                -webkit-box-shadow: 3px 0px 10px 0px rgba(50, 50, 50, 0.75);
+                -moz-box-shadow:    3px 0px 10px 0px rgba(50, 50, 50, 0.75);
+                box-shadow:         3px 0px 10px 0px rgba(50, 50, 50, 0.75);
+            }
+        </style> 
+
     </head>
     <body id="top">
         <div class="wrapper row1">
@@ -119,6 +136,10 @@
                             <li><a href="#">&raquo; Galeria</a></li>
                             <li><a href="#">&raquo; Videos</a></li>       
                         </ul>
+                    </div>
+                    <div style="height: 120px; padding: 1em" class="sombra-dir-baixo">
+                        <p class="Three-Dee">I Seminário de Arqueologia do LARQ</p>
+                        <h4 style="text-align: center"><a href="<?= base_url() ?>inscricoes">Mais informações AQUI!</a></h4>
                     </div>
                 </div>
                 <!-- ####################################################################################################### -->

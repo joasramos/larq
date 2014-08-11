@@ -37,18 +37,17 @@ class VerifyLogin extends CI_Controller {
             $sess_array = array();
             foreach ($result as $row) {
                 $sess_array = array(
-                    'id' => $row->id,
-                    'username' => $row->username
+                    'id' => $row->idparti,
+                    'username' => $row->user,
+                    'admin' => $row->admin
                 );
                 $this->session->set_userdata('logged_in', $sess_array);
             }
             return TRUE;
         } else {
-            $this->form_validation->set_message('check_database', 'Usuário ou senha inválidos');
+            $this->form_validation->set_message('check_database', 'Usuario ou senha invalidos');
             return false;
         }
     }
 
 }
-
-

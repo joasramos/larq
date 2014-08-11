@@ -62,7 +62,7 @@
                         <span>?</span>
                         <div class='content'>
                             <b></b>
-                            <p>Choose something or choose not. what shall it be?</p>
+                            <p>Qual a sua formação acadêmica atual?</p>
                         </div>
                     </div>
                 </div>
@@ -111,6 +111,7 @@
         </form>	
     </section>
 </div>
+
 <script>
     // initialize the validator function
     validator.message['date'] = 'not a real date';
@@ -152,4 +153,6 @@
         if (this.checked)
             $('form .alert').remove();
     }).prop('checked', false);
+
+   
 </script>

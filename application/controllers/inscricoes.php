@@ -36,13 +36,39 @@ class Inscricoes extends CI_Controller {
         $this->load->view("registro/cad-parti", $data);
     }
 
+    /*
+     * Exibe view de apresentação do evento
+     */
+
+    public function apresentacao() {
+        $this->load->view("registro/apresentacao");
+    }
+
+    /*
+     * Exibe view de apresentação do registro
+     */
+
+    public function programacao() {
+        $this->load->view("registro/programacao");
+    }
+
+    /*
+     * Exibe view de apresentação do normas
+     */
+
+    public function normas() {
+        $this->load->view("registro/normas");
+    }
+
     /**
      * Método chamado no ato do cadastro de um participante
      */
     public function submit() {
         $p = $this->input->post();
         $this->participante->insert($p);
-        redirect("inscricoes/success");
+
+        echo "<script>alert('Cadastro realizado com sucesso!')</script>";
+        redirect("inscricoes/cadastro", "refresh");
     }
 
     /*
