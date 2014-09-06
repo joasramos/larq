@@ -34,18 +34,12 @@
     <h1 title='how forms should be done.' style="text-align: center;">Normas de Inscrição</h1>
     <section class='form'>
         <p class="apre">
-            O inscrito é responsável pelos dados fornecidos no ato da inscrição, 
-            visando evitar possíveis problemas na disponibilização do CERTIFICADO. 
-            O pagamento poderá ser efetuado de 11 de agosto a 12 de setembro, 
-            no Laboratório de Arqueologia da UFMA (LARQ – Prédio de Pós-Graduação do CCH), 
-            das 14 às 18 horas, de segunda a sexta, e no dia 15 de setembro durante o CREDENCIAMENTO, 
-            das 14 às 17 horas. A taxa de inscrição deverá ser efetuada em espécie, no valor de R$ 10 (dez reais). 
-            Local de credenciamento: Hall do CCH. Local do evento: Biblioteca Setorial do CCH/UFMA.
+           O inscrito é responsável pelos dados fornecidos no ato da inscrição, visando evitar possíveis problemas na disponibilização do CERTIFICADO. O pagamento poderá ser efetuado de 11 de agosto a 12 de setembro, no Laboratório de Arqueologia da UFMA (LARQ – Prédio de Pós-Graduação do CCH), das 14 às 18 horas, de segunda a sexta, e no dia 15 de setembro durante o CREDENCIAMENTO, das 13 às 15:30 horas. A taxa de inscrição deverá ser efetuada em espécie, no valor de R$ 10 (dez reais). Local de credenciamento: Hall do CCH. Local do evento: Biblioteca Setorial do CCH/UFMA.
         </p>
     </section>  
 
     <div style="height: 300px; margin-top: 5em;
-         background-image: url('assets/themes/back-full-img/images/img2.JPG'); 
+         background-image: url('assets/themes/back-full-img/images/img1.jpg'); 
          background-size: cover " class='sombra-img'>
 
         <div style='background-color: black; opacity: 0.5; color: white; font-size: 12px; width: 450px'>

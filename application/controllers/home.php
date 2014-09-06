@@ -1,9 +1,7 @@
-
 <?php
-
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
-session_start(); //we need to call PHP's session object to access it through CI
+session_start(); 
 
 class Home extends CI_Controller {
 
@@ -70,5 +68,5 @@ class Home extends CI_Controller {
     }
 
 }
-?>
+
 

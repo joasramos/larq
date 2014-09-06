@@ -1,9 +1,10 @@
-<!--FORMULÁRIO PARA CADASTRO DE PARTICIPANTES-->
 
+<!--FORMULÁRIO PARA CADASTRO DE PARTICIPANTES-->
 <div id='wrap'>
     <h1 title='how forms should be done.'>Formulário de Cadastro</h1>
     <section class='form'>
         <form action="<?= base_url() ?>inscricoes/submit" method="post" novalidate>
+            <input type="hidden" value="<?= $status ?>" />
             <fieldset>
                 <div class="item">
                     <label>
@@ -154,5 +155,19 @@
             $('form .alert').remove();
     }).prop('checked', false);
 
-   
+
+    var aux = $("input[type='hidden']").val();
+
+    if (aux) {
+        if (aux == 'success_insc') {
+            alert("----------------------\n\
+SUA INSCRIÇÃO FOI REALIZADA COM SUCESSO!\n\
+-----------------------\n\
+\n\
+\n\
+\n\
+Vá para a página Inicial, e selecione a opção Area Restrita para visualizar seus Dados");
+            window.location.href = "http://" + window.document.domain + "/larq/inscricoes/cadastro";
+        }
+    }
 </script>

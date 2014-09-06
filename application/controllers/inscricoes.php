@@ -1,5 +1,4 @@
 <?php
-
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 
@@ -31,8 +30,9 @@ class Inscricoes extends CI_Controller {
      * Exibe view com o formulário de cadastro de um participante
      */
 
-    public function cadastro() {
+    public function cadastro($status = null) {
         $data['formacao'] = $this->participante->getFormacao();
+        $data['status'] = $status;
         $this->load->view("registro/cad-parti", $data);
     }
 
@@ -49,7 +49,7 @@ class Inscricoes extends CI_Controller {
      */
 
     public function programacao() {
-        $this->load->view("registro/programacao");
+        $this->load->view("registro/programacao"); 
     }
 
     /*
@@ -66,9 +66,8 @@ class Inscricoes extends CI_Controller {
     public function submit() {
         $p = $this->input->post();
         $this->participante->insert($p);
-
-        echo "<script>alert('Cadastro realizado com sucesso!')</script>";
-        redirect("inscricoes/cadastro", "refresh");
+//        echo "<script>alert('Cadastro realizado com sucesso!')</script>";
+        redirect("inscricoes/cadastro/success_insc");
     }
 
     /*
@@ -76,7 +75,7 @@ class Inscricoes extends CI_Controller {
      */
 
     public function success() {
-        $this->load->view("registro/success");
+        $this->load->view("registro/success"); 
     }
 
     /**

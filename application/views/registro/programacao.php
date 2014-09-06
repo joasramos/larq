@@ -34,17 +34,10 @@
     <h1 title='how forms should be done.' style="text-align: center;">Programação do Evento</h1>
     <section class='form'>
         <p class="apre">
-            O I Seminário do Laboratório de Arqueologia promoverá a inauguração do LARQ com
-            concentração de quatro atividades que ocorrerão entre os dias 15 e 16 de setembro de 2014. 
-            Duas delas serão realizadas no dia de 15 de setembro. A primeira será a palestra de inauguração 
-            do evento com Prof. Dr. Pedro Paulo Funari (UNICAMP), às 18h. Após, será realizada a visitação 
-            ao LARQ com o oferecimento de um coquetel. No dia 16 de setembro, ocorrerão as outras duas atividades. 
-            A primeira delas será uma mesa redonda sobre a Arqueologia do Maranhão, com a participação da Superintendente 
-            do IPHAN, Kátia Bogéa, e de três arqueólogos que atuam no Estado: Alexandre Guida Navarro, Arkley Bandeira e Danilo Assunção. 
-            A última atividade compreenderá o encerramento do evento e contará com a palestra do Prof. Dr. Lúcio Menezes Ferreira (UFPel), às 18h.  
+            O I Seminário do Laboratório de Arqueologia promoverá a inauguração do LARQ com concentração de quatro atividades que ocorrerão entre os dias 15 e 16 de setembro de 2014. Duas delas serão realizadas no dia de 15 de setembro. A primeira, às 16h., será a inauguração do LARQ com a presença do público e convidados, dentre eles o Magnífico Reitor Prof. Dr. Natalino Salgado e da Superintendente do IPHAN, Kátia Bogéa. Depois, todos de dirigirão à Biblioteca Setorial do CCH onde será realizado o Cerimonial de Abertura do evento às 17h., contando com a fala dos convidados. Após, às 18h., ocorrerá a Conferência de Abertura do evento, com Prof. Dr. Pedro Paulo Funari (UNICAMP), cujo título é “Arqueologia brasileira: história e perspectivas”. Ao final, será oferecido um coquetel para os presentes e onde haverá a venda de livros dos professores do Departamento de História e dos convidados. No dia 16 de setembro, ocorrerão as outras duas atividades. A primeira delas será uma mesa redonda sobre a Arqueologia do Maranhão intitulada “Arqueologia e Ecossistemas do Maranhão”, com a participação de três arqueólogos e um biólogo que atuam no Estado: Prof. Dr. Alexandre Guida Navarro (LARQ/UFMA), Prof. Dr. Claudio Urbano (Departamento de Oceanografia e Limnologia), Dr. Arkley Bandeira (Ecomuseu Sítio do Físico) e Ms. Danilo Assunção (IPHAN). A última atividade compreenderá o encerramento do evento e contará com a palestra do Prof. Dr. Lúcio Menezes Ferreira (UFPel), às 18h, cujo tema é “Arqueologia da escravidão no Brasil: uma perspectiva mundial”.
         </p>
          <div style="height: 400px; margin-top: 5em;
-             background-image: url('assets/themes/back-full-img/images/img3.JPG'); 
+             background-image: url('assets/themes/back-full-img/images/img4.jpg'); 
              background-size: cover " class='sombra-img'>
 
             <div style='background-color: black; opacity: 0.5; color: white; font-size: 12px; width: 550px'>

@@ -34,18 +34,11 @@
     <h1 title='how forms should be done.' style="text-align: center;">Apresentação do Evento</h1>
     <section class='form'>
         <p class="apre">
-            O Laboratório de Arqueologia da Universidade Federal do Maranhão (LARQ/UFMA) 
-            realiza pesquisas arqueológicas no Estado do Maranhão focalizando as ocupações 
-            lacustres pré-históricas chamadas de estearias, que estão localizadas na Baixada Maranhense. 
-            O LARQ está vinculado ao Programa de Pós-Graduação em História Social (PPGHIS) e Departamento de História (DEHIS). 
-            Conta, também, com o apoio institucional do IPHAN e financeiro da FAPEMA, 
-            através da concessão de dois editais de pesquisa, o Acervo Museológico e Rebax. 
-            Além disso, o LARQ possui um museólogo e sete alunos de Iniciação Científica PIBIC,
-            de vários cursos de Graduação, promovendo, assim, uma de suas principais características: a interdisciplinaridade. 
+            O Laboratório de Arqueologia da Universidade Federal do Maranhão (LARQ/UFMA) foi concebido no ano de 2010 pelo Departamento de História, após uma discussão acerca da importância da Arqueologia do Maranhão e da ausência de pesquisas nesta área. O Laboratório funciona no térreo do Prédio de Pós-Graduação em Ciências Humanas e Sociais e suas atividades iniciaram-se após o término da construção deste edifício, no ano de 2013. O LARQ realiza pesquisas arqueológicas no Estado do Maranhão, focalizando as ocupações lacustres pré-históricas chamadas de estearias, que estão localizadas na Baixada Maranhense. O LARQ está vinculado ao Programa de Pós-Graduação em História Social (PPGHIS) e ao Departamento de História (DEHIS). Conta, também, com o apoio institucional do IPHAN e financeiro da FAPEMA, através da concessão de dois editais de pesquisa, o Acervo Museológico e Rebax. Além disso, o LARQ possui um museólogo e sete alunos de Iniciação Científica PIBIC, de vários cursos de Graduação, promovendo, assim, uma de suas principais características: a interdisciplinaridade. 
         </p>
         
          <div style="height: 300px ; margin-top: 5em;
-             background-image: url('assets/themes/back-full-img/images/img1.JPG'); 
+             background-image: url('assets/themes/back-full-img/images/img3.jpg'); 
              background-size: cover " class='sombra-img'>
 
             <div style='background-color: black; opacity: 0.5; color: white; font-size: 12px; width: 450px'>

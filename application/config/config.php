@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost/larq/';
+$config['base_url']	= 'http://larq.quintaparte.com/'; 
 
 /*
 |--------------------------------------------------------------------------
@@ -360,3 +360,4 @@ $config['proxy_ips'] = '';
 
 /* End of file config.php */
 /* Location: ./application/config/config.php */
+?>
