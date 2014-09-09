@@ -66,21 +66,21 @@ $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
 
 //MYSQL
-$db['mysql']['hostname'] = 'localhost';
-$db['mysql']['username'] = 'quint870_larq';
-$db['mysql']['password'] = 'asdf0123';
-$db['mysql']['database'] = 'quint870_cch';
-$db['mysql']['dbdriver'] = 'mysql';
-$db['mysql']['dbprefix'] = '';
-$db['mysql']['pconnect'] = TRUE;
-$db['mysql']['db_debug'] = TRUE;
-$db['mysql']['cache_on'] = FALSE;
-$db['mysql']['cachedir'] = '';
-$db['mysql']['char_set'] = 'utf8';
-$db['mysql']['dbcollat'] = 'utf8_general_ci';
-$db['mysql']['swap_pre'] = '';
-$db['mysql']['autoinit'] = TRUE;
-$db['mysql']['stricton'] = FALSE;
+//$db['mysql']['hostname'] = 'localhost';
+//$db['mysql']['username'] = 'quint870_larq';
+//$db['mysql']['password'] = 'asdf0123';
+//$db['mysql']['database'] = 'quint870_cch';
+//$db['mysql']['dbdriver'] = 'mysql';
+//$db['mysql']['dbprefix'] = '';
+//$db['mysql']['pconnect'] = TRUE;
+//$db['mysql']['db_debug'] = TRUE;
+//$db['mysql']['cache_on'] = FALSE;
+//$db['mysql']['cachedir'] = '';
+//$db['mysql']['char_set'] = 'utf8';
+//$db['mysql']['dbcollat'] = 'utf8_general_ci';
+//$db['mysql']['swap_pre'] = '';
+//$db['mysql']['autoinit'] = TRUE;
+//$db['mysql']['stricton'] = FALSE;
 
 //MYYSQL
 //$db['mysql']['hostname'] = '200.137.132.9'; 
@@ -100,21 +100,21 @@ $db['mysql']['stricton'] = FALSE;
 //$db['mysql']['stricton'] = FALSE;
 
 //MYSQL
-//$db['mysql']['hostname'] = 'localhost';
-//$db['mysql']['username'] = 'root';
-//$db['mysql']['password'] = '';
-//$db['mysql']['database'] = 'larq';
-//$db['mysql']['dbdriver'] = 'mysql';
-//$db['mysql']['dbprefix'] = '';
-//$db['mysql']['pconnect'] = TRUE;
-//$db['mysql']['db_debug'] = TRUE;
-//$db['mysql']['cache_on'] = FALSE;
-//$db['mysql']['cachedir'] = '';
-//$db['mysql']['char_set'] = 'utf8';
-//$db['mysql']['dbcollat'] = 'utf8_general_ci';
-//$db['mysql']['swap_pre'] = '';
-//$db['mysql']['autoinit'] = TRUE;
-//$db['mysql']['stricton'] = FALSE;
+$db['mysql']['hostname'] = 'localhost';
+$db['mysql']['username'] = 'root';
+$db['mysql']['password'] = '';
+$db['mysql']['database'] = 'larq';
+$db['mysql']['dbdriver'] = 'mysql';
+$db['mysql']['dbprefix'] = '';
+$db['mysql']['pconnect'] = TRUE;
+$db['mysql']['db_debug'] = TRUE;
+$db['mysql']['cache_on'] = FALSE;
+$db['mysql']['cachedir'] = '';
+$db['mysql']['char_set'] = 'utf8';
+$db['mysql']['dbcollat'] = 'utf8_general_ci';
+$db['mysql']['swap_pre'] = '';
+$db['mysql']['autoinit'] = TRUE;
+$db['mysql']['stricton'] = FALSE;
 
 //SERVIDOR
 $db['server']['hostname'] = 'http://bdsites.ufma.br';

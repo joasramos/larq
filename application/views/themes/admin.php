@@ -1,13 +1,16 @@
-<html lang="en">
+<html lang="pt-br">
     <head>
         <title><?php echo $title; ?></title>
         <meta name="resource-type" content="document" />
         <meta name="robots" content="all, index, follow"/>
         <meta name="googlebot" content="all, index, follow" />
+        <base href="<?= base_url() ?>">
+
+        <meta charset="utf-8">
         <?php
         /** -- Copy from here -- */
         if (!empty($meta))
-            foreach ($meta as $name => $content) { 
+            foreach ($meta as $name => $content) {
                 echo "\n\t\t";
                 ?><meta name="<?php echo $name; ?>" content="<?php echo $content; ?>" /><?php
             }
@@ -32,9 +35,10 @@
         /** -- to here -- */
         ?>
 
-        <!-- Le styles -->
-        <link href="<?php echo base_url(); ?>assets/themes/default/hero_files/bootstrap.css" rel="stylesheet">
-        <link href="<?php echo base_url(); ?>assets/themes/default/hero_files/bootstrap-responsive.css" rel="stylesheet">
+        <!-- styles -->
+        <link href="<?= base_url() ?>assets/admin/css/bootstrap.min.css" rel="stylesheet">
+
+        <script type="text/javascript" src="<?= base_url() ?>assets/admin/js/bootstrap.min.js"></script>
         <link href="<?php echo base_url(); ?>assets/themes/default/css/general.css" rel="stylesheet">
         <link href="<?php echo base_url(); ?>assets/themes/default/css/custom.css" rel="stylesheet">
 
@@ -56,7 +60,7 @@
             body {
                 background-color: #fff;
                 margin: 40px;
-                font: 13px/20px normal Helvetica, Arial, sans-serif;
+                /*font: 13px/20px normal Helvetica, Arial, sans-serif;*/
                 color: #4F5155;
             }
 
@@ -111,26 +115,56 @@
 
     <body>
 
-        <div class="navbar navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container">
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </a>
-                    <img src="<?php echo base_url(); ?>assets/themes/default/images/logo.png" style="float:left;margin-top:5px;z-index:5" alt="logo"/>
-                    <a class="brand" href="<?php echo site_url(); ?>">&nbsp;&nbsp;Your Brand</a>
-                    <div style="height: 0px;" class="nav-collapse collapse">
-                        <ul class="nav">
-                            <li class="active"><a href="<?php echo site_url(); ?>">Home</a></li>
-                            <li><a href="<?php echo site_url('example/example_1'); ?>">Example 1</a></li>
-                            <li><a href="<?php echo site_url('example/example_2'); ?>">Example 2</a></li>
-                            <li><a href="<?php echo site_url('example/example_3'); ?>">Example 3</a></li>
-                            <li><a href="<?php echo site_url('example/example_4'); ?>">Example 4</a></li>
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <nav class="navbar navbar-default navbar-inverse" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button> 
+                        <a class="navbar-brand" href="#">LARQ</a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href="#">Artefatos</a>
+                            </li>
+                            <li>
+                                <a href="#">Usuários</a>
+                            </li>
+                            <!--                            <li class="dropdown">
+                                                            <a href="" class="dropdown-toggle" data-toggle="dropdown">Dropdown
+                                                                <strong class="caret"></strong>
+                                                            </a>
+                                                            <ul class="dropdown-menu">
+                                                                <li>
+                                                                    <a href="#">Action</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Another action</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Something else here</a>
+                                                                </li>
+                                                                <li class="divider">
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Separated link</a>
+                                                                </li>
+                                                                <li class="divider">
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">One more separated link</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>-->
                         </ul>
-                    </div><!--/.nav-collapse -->
-                </div>
+                    </div>
+                </nav>
             </div>
         </div>
 
@@ -146,11 +180,11 @@
 
             <footer>
                 <div class="row">
-                    <div class="span6 b10">
-                        Copyright &copy; <a target="_blank" href="https://plus.google.com/u/0/107789497808468736690?rel=author">John Skoumbourdis</a> | <a target="_blank" href="http://www.web-and-development.com">www.web-and-development.com</a>
+                    <div class="col-md-6">
+                        Copyright &copy; <a target="_blank" href="">Larq</a> | <a target="_blank" href="http://larq.quintaparte.com">larq.quintaparte.com</a>
                     </div>
                 </div>
             </footer>
-
-        </div> <!-- /container -->
-    </body></html>
+        </div> 
+    </body>
+</html>

@@ -18,10 +18,11 @@ class Site extends CI_Controller {
     }
 
     public function index() {
-        $this->load->view("site/index");
+        
     }
 
-    public function galeria() {
-        $this->load->view("site/galeria");
-    } 
+    public function example_3() {
+        $this->load->section('sidebar', 'ci_simplicity/sidebar');
+        $this->load->view('ci_simplicity/example_3');
+    }
 }
