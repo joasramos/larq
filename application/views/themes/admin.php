@@ -125,7 +125,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button> 
-                        <a class="navbar-brand" href="#">LARQ</a>
+                        <a class="navbar-brand" href="<?= base_url() ?>manager">LARQ</a>
                     </div>
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -168,7 +168,7 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="container" style="border: 1px outset #ccc; padding: 2em">
             <?php if ($this->load->get_section('text_header') != '') { ?>
                 <h1><?php echo $this->load->get_section('text_header'); ?></h1>
             <?php } ?>

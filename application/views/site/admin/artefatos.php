@@ -7,7 +7,7 @@
         <?php print_r($artefatos) ?>
     </pre>    -->
     <div class="row clearfix" style="margin-top: 80px">
-        <div class="col-md-12 column" style="/*height: 450px; overflow-y: scroll*/">
+        <div class="col-md-11 column" style="/*height: 450px; overflow-y: scroll*/">
             <table class="table table-bordered table-hover table-condensed">
                 <thead>
                     <tr>
@@ -25,6 +25,9 @@
                         </th>
                         <th>
                             Data de Cadastro
+                        </th>
+                        <th>
+                            Ações
                         </th>
                     </tr>
                 </thead>
@@ -45,6 +48,9 @@
                             </td>
                             <td>
                                 <?= date('d/m/Y', strtotime($artefato->data)) ?>
+                            </td>
+                            <td>
+                                | <a href="">E</a> | D | 
                             </td>
                         </tr>
                     <?php endforeach; ?>
